@@ -1,8 +1,6 @@
 # AccessRoles
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/access_roles`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Access role management library for role-based access control, based on RDF and ActiveTriples. Originally developed to support role-based access control in Hydra. See http://duke-libraries.github.io/2015/09/08/hydra-role-based-access-control.html.
 
 ## Installation
 
