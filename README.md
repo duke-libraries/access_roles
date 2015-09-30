@@ -20,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ActiveFedora 7.x/8.x
+
+```ruby
+class MyDatastream < ActiveFedora::NtriplesRDFDatastream
+  # You may use your own property name and predicate
+  property :access_role, 
+    predicate: AccessRoles::RolesVocabulary.hasRole,
+    class_name: AccessRoles::Role
+end
+```
 
 ## Development
 
