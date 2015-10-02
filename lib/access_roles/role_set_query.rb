@@ -51,7 +51,7 @@ module AccessRoles
     # Return the list of agents for the Roles matching the criteria.
     # @return [Array] the agents
     def agents
-      map { |role| role.agent.first }
+      map(&:agent)
     end
 
     # Return a list of the permissions granted to the Roles matching the criteria.
@@ -76,7 +76,7 @@ module AccessRoles
     end
 
     def matches_one?(role, key, value)
-      Array(value).include?(role.send(key).first)
+      Array(value).include? role.send(key)
     end
 
   end
